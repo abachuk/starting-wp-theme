@@ -1,0 +1,2 @@
+[05-Aug-2011 20:22:43] PHP Fatal error:  Call to undefined function  add_action() in /home/abachuk/public_html/2/wp-content/themes/ndm-blank3/functions.php on line 51
+[05-Aug-2011 20:23:31] PHP Fatal error:  Call to undefined function  get_header() in /home/abachuk/public_html/2/wp-content/themes/ndm-blank3/page.php on line 7

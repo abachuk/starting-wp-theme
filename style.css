@@ -1,0 +1,79 @@
+/*
+Theme Name: Alex B.
+Theme URI: http://
+Author: Alex Bachuk
+Description: 
+Version: 3.1
+License: GNU General Public License
+License URI: license.txt
+Tags: 
+*/
+
+@import "css/reset.css";
+
+/***********| ESSENTIALS |****************/
+img {max-width: 100%;}
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+.clearfix {overflow: hidden;}
+img.alignleft {float: left; margin: 3px 15px 15px 0;} 
+img.alignrightt {float: right; margin: 3px 0px 15px 15px;}
+
+html {}
+body {font-size: 14px; background: #eee; font-family: Helvetica, Arial, sans-serif;} 
+
+/*********| TYPOGRAPHY |***************/
+
+h1 {}
+h2 {font-size: 24px;} 
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+.entry-content p {margin-bottom: 15px;}
+
+/***********| HEADER |******************/
+
+
+
+/***********| HOME |*******************/
+
+
+
+/***********| PAGES |*****************/
+
+
+
+/***********| BLOG |*****************/
+
+
+
+/***********| SIDEBARS |*************/
+
+
+
+/***********| FOOTER |***************/
+
+
+
+/***********| EVERYTHING ELSE |*******/
+
+
+
+/***********| MEDIA QUERIES |*********/
+/***********
+			iPhone 4 640x960
+			iPad 768x1024 
+			MacBook Pro 15" 1140x900
+			Droid2 480x854
+			Nexus S and Samsung Galaxy S2 480x800
+	
+***********/
+
+
+@media (max-device-width: 640px) {
+	/* @media (max-device-width: 640px) example for iPhone */
+	
+}
