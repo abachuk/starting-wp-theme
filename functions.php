@@ -43,9 +43,6 @@ function boilerplate_setup() {
 		'primary' => __( 'Primary Navigation', 'boilerplate' ),
 	) );
 
-	// This theme allows users to set a custom background
-	add_custom_background();
-
 	// Your changeable header business starts here
 	define( 'HEADER_TEXTCOLOR', '' );
 	// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
@@ -63,10 +60,6 @@ function boilerplate_setup() {
 
 	// Don't support text inside the header image.
 	define( 'NO_HEADER_TEXT', true );
-
-	// Add a way for the custom header to be styled in the admin panel that controls
-	// custom headers. See boilerplate_admin_header_style(), below.
-	add_custom_image_header( '', 'boilerplate_admin_header_style' );
 
 	// ... and thus ends the changeable header business.
 
@@ -361,14 +354,16 @@ echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_dire
 /********* ADMIN BODY CLASS ***************/
 function ab_admin_body_class( $classes ) {
 global $wpdb, $post;
+if(isset($post)) {
 $post_type = get_post_type( $post->ID );
 
 if ( is_admin() ) {
 $classes .= 'post_id_' . $post->ID;
 $classes .= ' post_type_'.$post_type;
-}
+} }
 return $classes;
 }
+
 add_filter( 'admin_body_class', 'ab_admin_body_class' );
 
 
